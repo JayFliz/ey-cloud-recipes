@@ -85,9 +85,14 @@
 
 #include_recipe "varnish_frontend"
 
+
+#include the npm upgrade
+include_recipe "upgradenpm"
+
+
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
-#include_recipe "env_vars"
+include_recipe "env_vars"
 
 
 #uncomment to include the mysql_replication_check recipe
@@ -175,4 +180,6 @@
 
 #uncomment to include the motd customization related to the environment
 #include_recipe "env_motd"
+
+
 
