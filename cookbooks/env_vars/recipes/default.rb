@@ -2,6 +2,7 @@
 # Cookbook Name:: env_vars
 # Recipe:: default
 #
+message "env vars" 
 
 if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
 
