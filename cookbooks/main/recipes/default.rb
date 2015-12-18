@@ -92,7 +92,7 @@ include_recipe "upgradenpm"
 
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
-include_recipe "env_vars"
+#include_recipe "env_vars"
 
 
 #uncomment to include the mysql_replication_check recipe
@@ -103,7 +103,7 @@ include_recipe "env_vars"
 #include_recipe "mysql_administrative_tools"
 
 #uncomment to include the Elasticsearch recipe
-#include_recipe "elasticsearch"
+include_recipe "elasticsearch"
 
 #uncomment to include the Elasticsearch recipe on solos and app masters
 #include_recipe "elasticsearch::non_util"
