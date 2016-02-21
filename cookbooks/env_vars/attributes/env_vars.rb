@@ -8,5 +8,6 @@ default[:env_vars] = {
   :RUBY_HEAP_SLOTS_GROWTH_FACTOR => "1.8",
   :RUBY_GC_MALLOC_LIMIT => "8000000",
   :RUBY_HEAP_FREE_MIN => "4096",
+  :ELASTICSEARCH_URL => "http://ec2-52-49-68-190.eu-west-1.compute.amazonaws.com:9200",
   :SECRET_KEY_BASE => '8d2e657873ed881ca4fd17bf2d155beee2cc0f8d24267fd436a10f29f6849d0597ddcf349908f92ede130636ec009ac56a8e68e2537d00c62b4784ef66028a68',
 }
